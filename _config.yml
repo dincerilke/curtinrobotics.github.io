@@ -2,12 +2,10 @@
 
 # Site settings
 title: Curtin Robotics Club
+acronym: CRoC
 email: curtinroboticsclub@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
+description: >
+  Curtin University Robotics Club. A member run guild club concerned with building robots.
 url: "http://curtinrobotics.github.io" # the base hostname & protocol for your site
 github_username: curtinrobotics
 github_repository: curtinrobotics.github.io
