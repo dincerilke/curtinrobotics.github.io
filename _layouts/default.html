@@ -1,3 +1,5 @@
+<!-- Default page layout: includes head metadata, navbar, footer and a
+consistent header format. Content layout is left to each page. -->
 <!DOCTYPE html>
 <html>
 
@@ -8,6 +10,7 @@
     {% include header.html %}
 
     <div class="container">
+      <h2 class="page-header">{{ page.title }}</h2>
       <!-- <div class="row">
         <div class="col-sm-3"></div>
       </div> -->

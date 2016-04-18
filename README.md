@@ -71,7 +71,7 @@ information and to setup your environment:
     your environment.
 
 We've already said that HTML is important to a website, but with Jekyll, we
-have almost no need to touch a single HTML file. Instead we can use
+have _almost no need_ to touch a single HTML file. Instead we can use
 **Markdown**.
 Contrary to its name, Markdown is a mark up language in which you write plain
 text files and render them into something that is nicer to view. The README you
@@ -97,3 +97,4 @@ developer.
 ---
 #### List of contributors
 - Jarryd Tilbrook ([@jradtilbrook](https://github.com/jradtilbrook))
+- Curtin Robotics Club ([@curtinrobotics](https://github.com/curtinrobotics))

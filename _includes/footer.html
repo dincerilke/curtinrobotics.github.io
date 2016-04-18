@@ -1,18 +1,22 @@
+<!-- Footer included at the bottom of every page -->
 <footer class="footer">
   <div class="container">
     <div class="row row-centered">
-      <div class="col-md-3" style="margin-top: 20px;">
+      <div class="col-md-3 col-sm-3" style="margin-top: 20px;">
         <p class="text-muted">{{ site.title }}</p>
       </div>
-      <div class="col-md-3 col-md-offset-6 pull-right" style="margin-top: 10px;">
-        <ul style="list-style-type: none;">
+        <div class="col-md-3 col-sm-3 col-md-offset-2 col-sm-offset-2" style="margin-top: 20px;">
+          <p class="text-muted">Last updated: {{ site.time | date_to_string }}</p>
+        </div>
+      <div class="col-md-3 col-sm-3 col-md-offset-1 col-sm-offset-1" style="margin-top: 10px;">
+        <ul class="list-unstyled pull-right">
           <li>
             <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
             <a href="mailto:{{ site.email }}">{{site.email}}</a>
           </li>
           <li>
             <i class="fa fa-github fa-1x" aria-hidden="true"></i>
-            <a href="https://github.com/{{ site.github_username }}">{{site.github_username}}</a>
+            <a href="https://github.com/{{ site.github_username }}" target="_blank">{{site.github_username}}</a>
           </li>
         </ul>
       </div>
