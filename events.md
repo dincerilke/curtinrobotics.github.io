@@ -2,18 +2,24 @@
 title: Events
 layout: default
 includenav: true # for inclusion in the site navbar
+excerpt: >
+  Curtin Robotics Club (CRoC) event page. See the calendar below for our
+  upcoming events.
 ---
 
-The calendar below shows our upcoming events. Feel free to come along although
-some events may have restrictions (_eg 18+, members only_) or require RSVP so be
-sure to <a href="mailto:{{site.email}}">get in touch</a> beforehand.
+The calendar below shows our upcoming events. Feel free to come along but keep
+in mind that some events may have restrictions (eg _18+_ or _members only_) or
+require _RSVP_ so be sure to [get in touch](mailto:{{site.email}}) beforehand.
 
-There is usually at least one person in our clubroom at all times, so also feel
-free to swing by for more information and to check out our space.
+If you would like to propose an event or project please submit the **???** form
+found on the [**???**](./sdf) page - or, fill it out directly **here(button)**
 
 <br>
 {% include calendar.html %}
+<br>
 
 ### Club Meetings
-We host most of our documentation on Google, so you can view our meeting agendas
-and minutes embedded on this site. Check the [Meetings](./meetings) page.
+You can see our past and upcoming minutes and agendas on the
+[Minutes](../minutes) page.
+
+<br>
