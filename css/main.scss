@@ -14,6 +14,28 @@ html > body {
   margin-bottom: 80px;
 }
 
+footer > .container {
+    margin-top: 20px;
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: center;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
+.col-right {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: right;
+    /* inline-block space fix */
+    margin-right: -4px;
+}
+
 .navbar-wrapper {
     margin-top: 20px;
   // add nice rounded border to navbar

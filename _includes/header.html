@@ -4,23 +4,24 @@
     <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/"><span class="fa-bolt"></span>&nbsp;{{ site.title }}</a>
+          <a class="navbar-brand" href="/"><i class="fa fa-bolt"></i>&nbsp;{{ site.title }}</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-          {% for p in site.pages %}
-            {% if p.includenav %} <!-- only include desired pages -->
-              <li {% if p.title == page.title %}class="active"{% endif%}>
-                <a href="{{ p.url | remove: '.html' }}">
-                    {% if p.navtitle %}
-                        {{ p.navtitle }}
-                    {% else %}
-                        {{ p.title }}
-                    {% endif %}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
+            {% assign pages = site.pages | sort: 'title' %}
+            {% for p in pages %}
+              {% if p.includenav %} <!-- only include desired pages -->
+                <li {% if p.title == page.title %}class="active"{% endif%}>
+                  <a href="{{ p.url | remove: '.html' }}">
+                      {% if p.navtitle %}
+                          {{ p.navtitle }}
+                      {% else %}
+                          {{ p.title }}
+                      {% endif %}
+                  </a>
+                </li>
+              {% endif %}
+            {% endfor %}
             <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects&nbsp;<i class="fa fa-caret-down"></i></a>
               <ul class="dropdown-menu">
