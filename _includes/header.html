@@ -11,7 +11,13 @@
           {% for p in site.pages %}
             {% if p.includenav %} <!-- only include desired pages -->
               <li {% if p.title == page.title %}class="active"{% endif%}>
-                <a href="{{ p.url | remove: '.html' }}">{{ p.title }}</a>
+                <a href="{{ p.url | remove: '.html' }}">
+                    {% if p.navtitle %}
+                        {{ p.navtitle }}
+                    {% else %}
+                        {{ p.title }}
+                    {% endif %}
+                </a>
               </li>
             {% endif %}
           {% endfor %}
