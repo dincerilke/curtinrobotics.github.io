@@ -2,6 +2,7 @@
 title: Events
 layout: default
 includenav: true # for inclusion in the site navbar
+excerpt: Curtin Robotics Club upcoming events.
 ---
 
 The calendar below shows our upcoming events. Feel free to come along although
