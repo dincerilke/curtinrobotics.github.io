@@ -2,9 +2,59 @@
 layout: homepage
 ---
 
-<div class="jumbotron"> <!-- or .well? -->
-	<h2>The {{site.title}}</h2>
-	<p>A member run Guild club that's about everything robotics.</p>
+<!-- insert carousel of images? or a gallery page (embed google folder, or use nice bootstrap modal, etc)-->
+<!-- storing from google drive seems very slow, need to test if images are served from this site, otherwise it could just be the large resolution
+	This would be good with a montage of images that had a better size fit -->
+<!-- <div class="row">
+	<div class="col-md-12">
+		<div class="well">
+		<div id="slides" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#slides" data-slide-to="0" class="active"></li>
+				<li data-target="#slides" data-slide-to="1"></li>
+				<li data-target="#slides" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox" style="max-height: 400px;">
+				<div class="item active">
+					<img style="transform: rotate(90deg);" height="200" src="https://docs.google.com/uc?authuser=0&id=0B3zdoDC33IO_Z1MyTFNva0FpdlE&export=download" />
+				</div>
+					<div class="item">
+						<img src="https://docs.google.com/uc?authuser=0&id=0B3zdoDC33IO_dldlcGxTTDZ5WjQ&export=download" />
+					</div>
+						<div class="item">
+							<img src="https://docs.google.com/uc?authuser=0&id=0B3zdoDC33IO_eUNQRktIVklJUkE&export=download" />
+						</div>
+			</div>
+			<a class="left carousel-control" href="#slides" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+			<a class="right carousel-control" href="#slides" role="button" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+		</div>
+	</div>
+</div>
+</div> -->
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="jumbotron"> <!-- or .well? -->
+			<h2>The {{site.title}}</h2>
+			<p>A member run student guild club that is all about robotics.</p>
+		</div>
+	</div>
 </div>
 
-<!-- insert carousel of images? -->
+<div class="row">
+	<div class="col-md-9 col-sm-8 col-xs-12">
+		Placeholder text for a description and brief overview of the club. Also include some info about what this site is about. Joining croc, projects that we do, equipment we have access to.
+	</div>
+	<div class="col-md-3 col-sm-4 col-xs-12">
+		<div class="panel panel-inverse">
+			<div class="panel-heading">Extra Site Navigation</div>
+			<div class="list-group">
+				{% for p in site.pages %}
+					{% if p.title %} <!-- and p.includenav == nil -->
+						<a href="{{p.url | remove: '.html'}}" class="list-group-item">{{p.title}}</a>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

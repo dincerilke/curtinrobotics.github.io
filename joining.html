@@ -1,0 +1,22 @@
+---
+title: Join
+layout: default
+includenav: true # for inclusion in the site navbar
+excerpt: How to join Curtin Robotics Club
+---
+
+To join {{ site.title }} please ...
+
+<ul class="list-unstyled">
+{% for form in site.data.forms %}
+  <li>
+    {% include modalbutton.html title=form.title %}
+  </li>
+  <br />
+{% endfor %}
+</ul>
+
+<!-- Best to keep modal definitions at the highest scope possible -->
+{% for form in site.data.forms %}
+    {% include formmodal.html url=form.url title=form.title %}
+{% endfor %}
