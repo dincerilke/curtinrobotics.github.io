@@ -29,3 +29,21 @@ layout: homepage
 		</div>
 	</div>
 </div>
+
+<div class="row">
+	<div class="col-md-9 col-sm-8 col-xs-12">
+		Placeholder text for a description and brief overview of the club. Also include some info about what this site is about. Joining croc, projects that we do, equipment we have access to. Is there anything else?
+	</div>
+	<div class="col-md-3 col-sm-4 col-xs-12">
+		<div class="panel panel-inverse">
+			<div class="panel-heading">Site Navigation</div>
+			<div class="list-group">
+				{% for p in site.pages %}
+					{% if p.title %}
+						<a href="{{p.url | remove: '.html'}}" class="list-group-item">{{p.title}}</a>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
