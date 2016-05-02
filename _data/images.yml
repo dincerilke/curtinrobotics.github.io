@@ -1,4 +1,9 @@
 # URL keys to images stored on google drive
+# Properties:
+# - title: title of image for screen readers or an overlay
+# - url: the unique url key from google drive retrieved from the shareable link
+# - style: any custom style to apply to the html <img> element
+# - active: the initial photo to display (only apply this to one)
 
 - title: 3D Printer Cup
   url: 0B3zdoDC33IO_Z1MyTFNva0FpdlE
@@ -10,3 +15,6 @@
 
 - title: Line Following Arch
   url: 0B3zdoDC33IO_eUNQRktIVklJUkE
+
+- title: Line Following Arch 2
+  url: 0B3zdoDC33IO_c05UdmNtdGtCRm8

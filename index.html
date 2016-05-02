@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-<div class="jumbotron"> <!-- or .well? -->
+<div class="jumbotron">
 	<h2>The {{site.title}}</h2>
 	<p>A member run Guild club that's about everything robotics.</p>
 </div>
@@ -10,22 +10,22 @@ layout: homepage
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 		<div class="well">
-		<div id="slides" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#slides" data-slide-to="0" class="active"></li>
-				<li data-target="#slides" data-slide-to="1"></li>
-				<li data-target="#slides" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner" role="listbox" style="max-height: 400px;">
-				{% for image in site.data.images %}
-					<div class="item {% if image.active %}active{% endif %}">
-						<img {% if image.style %}style="{{ image.style }}"{% endif %} src="https://docs.google.com/uc?authuser=0&id={{ image.url }}&export=download" alt="{{ image.title }}"/>
-					</div>
-				{% endfor %}
+			<div id="slides" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					{% for image in site.data.images %}
+					<li data-target="#slides" data-slide-to="{{ forloop.index | minus: 1 }}" {% if image.active %}class="active"{% endif %}></li>
+					{% endfor %}
+				</ol>
+				<div class="carousel-inner" role="listbox" style="max-height: 500px;">
+					{% for image in site.data.images %}
+						<div class="item {% if image.active %}active{% endif %}">
+							<img {% if image.style %}style="{{ image.style }}"{% endif %} src="https://docs.google.com/uc?authuser=0&id={{ image.url }}&export=download" alt="{{ image.title }}"/>
+						</div>
+					{% endfor %}
+				</div>
+				<a class="left carousel-control" href="#slides" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+				<a class="right carousel-control" href="#slides" role="button" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
 			</div>
-			<a class="left carousel-control" href="#slides" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-			<a class="right carousel-control" href="#slides" role="button" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
 		</div>
 	</div>
-</div>
 </div>
