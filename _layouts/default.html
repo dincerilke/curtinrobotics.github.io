@@ -11,16 +11,11 @@ consistent header format. Content layout is left to each page. -->
 
     <div class="container">
       <h2 class="page-header">{{ page.title }}</h2>
-      <!-- <div class="row">
-        <div class="col-sm-3"></div>
-      </div> -->
-      <!-- <h2>{{ page.title }}</h2> -->
-      <!-- <div class="well"> -->
         {{ content }}
-      <!-- </div> -->
     </div>
 
     {% include footer.html %}
+    {% include googleanalytics.html %}
 
   </body>
 
