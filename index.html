@@ -13,7 +13,7 @@ layout: homepage
 			<div id="slides" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					{% for image in site.data.images %}
-					<li data-target="#slides" data-slide-to="{{ forloop.index | minus: 1 }}" {% if image.active %}class="active"{% endif %}></li>
+					<li data-target="#slides" data-slide-to="{{ forloop.index | minus: 1 }}" {% if image.active %}class="active"{% endif %}></li>					
 					{% endfor %}
 				</ol>
 				<div class="carousel-inner" role="listbox" style="max-height: 500px;">
@@ -32,7 +32,7 @@ layout: homepage
 
 <div class="row">
 	<div class="col-md-9 col-sm-8 col-xs-12">
-		Placeholder text for a description and brief overview of the club. Also include some info about what this site is about. Joining croc, projects that we do, equipment we have access to. Is there anything else?
+		Curtin Robotics Club (CRoC) is a club for people who love to create and build electronic projects. We as a club build robots, participate in robotics competitions, teach high school students to build a robot with Engineering Outreach, and much more. Our objective is to create a club and a fun environment for students who share the same interest.
 	</div>
 	<div class="col-md-3 col-sm-4 col-xs-12">
 		<div class="panel panel-inverse">
