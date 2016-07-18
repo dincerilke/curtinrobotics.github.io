@@ -25,7 +25,7 @@ further assist.
 The site is deployed using the free GitHub Pages service and is built right from
 the contents of this repository. We currently don't have a registered domain, so
 we simply use the one GitHub has provided, which is
-http://curtinrobotics.github.io.
+https://curtinrobotics.github.io.
 
 The website was started as a test to see whether it would be a viable resource
 worth the time investment. It aims to be the central hub for the club to share
@@ -61,14 +61,13 @@ to check out their documentation. The following links should help you out:
 
 We (and GitHub Pages) use [**Jekyll**](https://jekyllrb.com/) to generate our
 website. Jekyll is a framework for converting plain text into static websites.
-It is powered by **Ruby** but you won't need to know it to contribute. If you
-want to help out you will most likely need OS X or a Linux environment, as
-support for Windows is reportedly lacking. Check out these links for more
-information and to setup your environment:
+It is powered by **Ruby** but you won't need to know it to contribute. Check out
+these links for more information and to setup your environment:
 - [Jekyll Installation](https://jekyllrb.com/docs/installation/) - Read the
     documentation to understand how Jekyll operates.
 - [GitHub Pages](https://pages.github.com/) - Follow these tutorials to setup
     your environment.
+- [Development Environment](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#platform-windows) - Another useful link for setting up you development environment.
 
 We've already said that HTML is important to a website, but with Jekyll, we
 have _almost no need_ to touch a single HTML file. Instead we can use
@@ -97,4 +96,5 @@ developer.
 ---
 #### List of contributors
 - Jarryd Tilbrook ([@jradtilbrook](https://github.com/jradtilbrook))
+- Luke Stokes ([@Tapego](https://github.com/Tapego))
 - Curtin Robotics Club ([@curtinrobotics](https://github.com/curtinrobotics))
