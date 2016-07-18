@@ -14,13 +14,13 @@ title: Home
 			<div id="slides" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					{% for image in site.data.images %}
-					<li data-target="#slides" data-slide-to="{{ forloop.index | minus: 1 }}" {% if image.active %}class="active"{% endif %}></li>					
+						<li data-target="#slides" data-slide-to="{{ forloop.index | minus: 1 }}" {% if image.active %}class="active"{% endif %}></li>
 					{% endfor %}
 				</ol>
 				<div class="carousel-inner" role="listbox" style="max-height: 500px;">
 					{% for image in site.data.images %}
 						<div class="item {% if image.active %}active{% endif %}">
-							<img {% if image.style %}style="{{ image.style }}"{% endif %} src="https://docs.google.com/uc?authuser=0&id={{ image.url }}&export=download" alt="{{ image.title }}"/>
+							<img {% if image.style %}style="{{ image.style }}"{% endif %} src="{{ image.url }}" alt="{{ image.title }}"/>
 						</div>
 					{% endfor %}
 				</div>

@@ -6,18 +6,18 @@
 # - active: the initial photo to display (only apply this to one)
 
 - title: 3D Printer Cup
-  url: 0B3zdoDC33IO_Z1MyTFNva0FpdlE
+  url: https://docs.google.com/uc?authuser=0&id=0B3zdoDC33IO_Z1MyTFNva0FpdlE
   style: "transform: rotate(90deg);"
   active: true
 
 - title: Open Day Printer
-  url: 0B3zdoDC33IO_dldlcGxTTDZ5WjQ
+  url: https://docs.google.com/uc?authuser=0&id=0B3zdoDC33IO_dldlcGxTTDZ5WjQ
 
 - title: Line Following Arch
-  url: 0B3zdoDC33IO_c05UdmNtdGtCRm8
+  url: https://docs.google.com/uc?authuser=0&id=0B3zdoDC33IO_c05UdmNtdGtCRm8
 
 - title: NI ARC 2015
-  url: 0B3zdoDC33IO_ZFJseWgxcG5Pak0
-  
+  url: https://docs.google.com/uc?authuser=0&id=0B3zdoDC33IO_ZFJseWgxcG5Pak0
+
 - title: Sausage Sizzle
-  url: 0B3zdoDC33IO_T3JHb2FyUTNzTm8
+  url: https://docs.google.com/uc?authuser=0&id=0B3zdoDC33IO_T3JHb2FyUTNzTm8
