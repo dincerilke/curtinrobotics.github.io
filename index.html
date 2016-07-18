@@ -40,7 +40,7 @@ title: Home
 			<div class="panel-heading">Site Navigation</div>
 			<div class="list-group">
 				{% for p in site.pages %}
-					{% if p.title %}
+					{% if p.title and (p.title != 'Home' and p.title != '404 Page') %}
 						<a href="{{p.url | remove: '.html'}}" class="list-group-item">{{p.title}}</a>
 					{% endif %}
 				{% endfor %}
