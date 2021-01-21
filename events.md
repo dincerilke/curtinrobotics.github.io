@@ -1,6 +1,6 @@
 ---
 title: Events
-layout: default
+layout: page
 includenav: true # for inclusion in the site navbar
 excerpt: Curtin Robotics Club upcoming events.
 ---
@@ -15,7 +15,6 @@ member and would like to suggest an event, it is best to
 [email](mailto:{{site.email}}) the committee.
 
 <br>
-{% include calendar.html %}
 
 ### Club Meetings
 You can see our meeting agendas and minutes on the [Minutes](./minutes) page.

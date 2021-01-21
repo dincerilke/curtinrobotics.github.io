@@ -1,21 +1,55 @@
-<!-- Default page layout: includes head metadata, navbar, footer and a
-consistent header format. Content layout is left to each page. -->
+---
+layout: compress
+---
 <!DOCTYPE html>
-<html>
+<html lang="{{ page.lang | default: site.lang | default: "en-US" }}">
 
   {% include head.html %}
 
-  <body>
+  <body class="site">
+
+    {% if site.google_tag_manager %}
+
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+    {% endif %}
 
     {% include header.html %}
 
-    <div class="container">
-      <h2 class="page-header">{{ page.title }}</h2>
-        {{ content }}
+    <div class="hero lazyload" data-bg="{{ site.url }}{{ site.baseurl }}/assets/img/{{ site.hero_img }}">
+      <div class="hero__wrap">
+        <h1 class="hero__title">{{ site.title | escape }}</h1>
+        <p class="hero__meta">{{ site.tagline }}</p>
+      </div>
     </div>
 
+    <main class="site__content">
+
+        <section class="content">
+          <div class="page-content">
+              <!-- Curtin Robotics Club (CRoC) is a club for people who love to create and build electronic projects. We as a club build robots, participate in robotics competitions, teach high school students to build a robot with Engineering Outreach, and much more. Our objective is to create a club and a fun environment for students who share the same interest. -->
+              {{content}}
+          </div>
+        </section>
+
+      <section class="blog">
+        <div class="container">
+          <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
+
+            {% for post in site.posts %}
+              {% include card.html %}
+            {% endfor %}
+
+            <!-- {% include pagination.html %} -->
+          </div>
+        </div>
+      </section>
+    </main>
+
     {% include footer.html %}
-    {% include googleanalytics.html %}
 
   </body>
 

@@ -1,0 +1,32 @@
+---
+title: Projects
+layout: page
+includenav: true # for inclusion in the site navbar
+excerpt: Curtin Robotics Club current Projects
+---
+
+{% include header.html %}
+
+
+<main class="site__content">
+
+    <section class="content">
+        <div class="page-content">
+            <!-- Curtin Robotics Club (CRoC) is a club for people who love to create and build electronic projects. We as a club build robots, participate in robotics competitions, teach high school students to build a robot with Engineering Outreach, and much more. Our objective is to create a club and a fun environment for students who share the same interest. -->
+            {{content}}
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <div class="post-list" itemscope="" itemtype="http://schema.org/Blog">
+
+            {% for post in site.posts %}
+                {% include card.html %}
+            {% endfor %}
+
+            <!-- {% include pagination.html %} -->
+            </div>
+        </div>
+    </section>
+</main>

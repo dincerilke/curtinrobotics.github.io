@@ -1,6 +1,7 @@
 # Jekyll configuration file
 
 # Site settings
+# theme: jekyll-sleek
 title: Curtin Robotics Club
 acronym: CRoC
 email: curtinroboticsclub@gmail.com
@@ -11,6 +12,7 @@ description: >
 url: "http://curtinrobotics.github.io" # the base hostname & protocol for your site
 github_username: curtinrobotics
 github_repository: curtinrobotics.github.io
+
 
 # Build settings
 markdown: kramdown

@@ -1,11 +1,24 @@
 ---
-layout: homepage
+layout: default
 title: Home
 ---
 
-<div class="jumbotron">
-	<h2>The {{site.title}}</h2>
-	<p>A member run Guild club that's about everything robotics.</p>
+<div class="row">
+	<div class="col-md-9 col-sm-8 col-xs-12">
+		Curtin Robotics Club (CRoC) is a club for people who love to create and build electronic projects. We as a club build robots, participate in robotics competitions, teach high school students to build a robot with Engineering Outreach, and much more. Our objective is to create a club and a fun environment for students who share the same interest.
+	</div>
+	<!-- <div class="col-md-3 col-sm-4 col-xs-12">
+		<div class="panel panel-inverse">
+			<div class="panel-heading">Site Navigation</div>
+			<div class="list-group">
+				{% for p in site.pages %}
+					{% if p.title and p.title != 'Home' and p.title != '404 Page' %}
+						<a href="{{p.url | remove: '.html'}}" class="list-group-item">{{p.title}}</a>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div> -->
 </div>
 
 <div class="row">
@@ -26,24 +39,6 @@ title: Home
 				</div>
 				<a class="left carousel-control" href="#slides" role="button" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
 				<a class="right carousel-control" href="#slides" role="button" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="row">
-	<div class="col-md-9 col-sm-8 col-xs-12">
-		Curtin Robotics Club (CRoC) is a club for people who love to create and build electronic projects. We as a club build robots, participate in robotics competitions, teach high school students to build a robot with Engineering Outreach, and much more. Our objective is to create a club and a fun environment for students who share the same interest.
-	</div>
-	<div class="col-md-3 col-sm-4 col-xs-12">
-		<div class="panel panel-inverse">
-			<div class="panel-heading">Site Navigation</div>
-			<div class="list-group">
-				{% for p in site.pages %}
-					{% if p.title and (p.title != 'Home' and p.title != '404 Page') %}
-						<a href="{{p.url | remove: '.html'}}" class="list-group-item">{{p.title}}</a>
-					{% endif %}
-				{% endfor %}
 			</div>
 		</div>
 	</div>
